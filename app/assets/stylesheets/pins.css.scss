@@ -1,3 +1,47 @@
 // Place all the styles related to the Pins controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.item-background{
+	background: #fefefe;
+	border: 2px solid #fcfcfc;
+	box-shadow: 0 1px 2px #888888;
+	margin: 0 2px 15px;
+	column-break-inside: avoid;
+	display: inline-block;
+	width: 100%;
+}
+
+.item-background:not(:hover){
+	opacity: 0.7;
+
+}
+
+.pin-image {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+	column-count: 3;
+	column-width: 320px;
+	column-fill: auto;
+	-webkit-column-width: 320px;
+	-webkit-column-gap: 15px;
+	-webkit-column-count: 3;
+	-webkit-column-width: 320px;
+	-webkit-column-fill: auto;
+	-moz-column-width: 320px;
+	-moz-column-gap: 15px;
+	-moz-column-count: 3;
+	-moz-column-width: 320px;
+	-moz-column-fill: auto;
+
+}

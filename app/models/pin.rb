@@ -1,7 +1,8 @@
 class Pin < ActiveRecord::Base
-	has_many :boards
-    has_many :pins
+	belongs_to :board
+    belongs_to :user
 
-	validates :name, presence => true
+	validates :name, :presence => true
+	mount_uploader :image, ImageUploader
 	
 end
